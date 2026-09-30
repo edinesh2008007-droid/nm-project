@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🏋️‍♂️ FitBuddy – AI Fitness Plan Generator
 FitBuddy is an AI-powered web application designed to generate personalized 7-day workout plans and tailored nutrition or recovery tips based on individual user fitness goals, age, weight, and preferred exercise intensity.   
 PDF
@@ -135,3 +136,7 @@ Admin Dashboard: Visit [http://127.0.0.1:8000/view-all-users](http://127.0.0.1:8
 PDF
 
 Made by Sai Pretesh
+=======
+# fit-buddy-project
+FitBuddy is an AI-powered fitness assistant that generates personalized 7-day workout plans and practical nutrition or recovery tips based on the user's fitness goals, age, weight, and preferred workout intensity.
+>>>>>>> 1f859bc38b3363b98c1e6cc639a61787e6d64bf3
