@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Workout Plan - FitBuddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container wide">
+    <h1>🏋️ Your Personalized Workout Plan</h1>
+
+    {% if message %}<p class="success">✅ {{ message }}</p>{% endif %}
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+
+    <h2>User Information</h2>
+    <div class="info">
+      <p><b>Name:</b> {{ username }}</p>
+      <p><b>User ID:</b> {{ user_id }}</p>
+      <p><b>Age:</b> {{ age }}</p>
+      <p><b>Weight:</b> {{ weight }} kg</p>
+      <p><b>Goal:</b> {{ goal }}</p>
+      <p><b>Intensity:</b> {{ intensity | capitalize }}</p>
+    </div>
+
+    <h2>Workout Plan</h2>
+    <pre>{{ workout_plan }}</pre>
+
+    <h2>💡 Nutrition Tip</h2>
+    <div class="tip">{{ nutrition_tip }}</div>
+
+    <h2>📝 Share Your Feedback</h2>
+    <form action="/submit-feedback" method="post">
+      <label for="user_id_fb">Your Unique User ID:</label>
+      <input type="number" id="user_id_fb" name="user_id" value="{{ user_id }}" required>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" placeholder="e.g., more focus on cardio, include more rest days" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="nav"><a href="/">← New plan</a> | <a href="/view-all-users">All users</a></div>
+  </div>
+</body>
+</html>
