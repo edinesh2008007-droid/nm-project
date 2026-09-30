@@ -135,7 +135,7 @@ PDF
 Admin Dashboard: Visit [http://127.0.0.1:8000/view-all-users](http://127.0.0.1:8000/view-all-users).   
 PDF
 
-Made by Sai Pretesh
+Made by Dinesh
 =======
 # fit-buddy-project
 FitBuddy is an AI-powered fitness assistant that generates personalized 7-day workout plans and practical nutrition or recovery tips based on the user's fitness goals, age, weight, and preferred workout intensity.
